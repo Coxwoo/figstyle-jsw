@@ -5,9 +5,16 @@ description: 그래프 (matplotlib) 를 figstyle 스타일로 그린다 — 축 
 
 # figstyle — 같은 모양의 그래프
 
-이 skill 폴더 (Base directory) 에 스타일 `figstyle.py`, 규칙 `rules/graph-style.md`, 예시 `examples/make_examples.py` 가 있다.
+이 skill 폴더 (Base directory) 에 스타일 `figstyle.py`, 규칙 `rules/graph-style.md`, 설치 확인 `check_setup.py`, 예시 `examples/make_examples.py` 가 있다.
 
-## 순서
+## 0. 준비 — 이 PC 에서 처음이면
+
+1. `python <이 skill 폴더>/check_setup.py` 를 돌린다.
+2. 빠진 Python 패키지가 있으면 사용자에게 한 줄 알리고 `python <이 skill 폴더>/check_setup.py --install`.
+3. 빠진 글꼴 (Arial Narrow, 한글을 쓸 때 Noto Sans KR) 은 스크립트가 알려 주는 안내를 사용자에게 보여 주고, 사용자 확인 뒤 설치를 돕는다. 설치한 뒤 `--install` 로 matplotlib 글꼴 목록을 새로 만든다.
+4. 다 갖추지 못해도 그릴 수는 있다 — 글꼴이 바뀌면 모양이 조금 달라진다고 알린다.
+
+## 1. 그리는 순서
 
 1. 그리기 전에 `rules/graph-style.md` 를 읽는다.
 2. 그림이 보일 주장을 한 문장으로 정한다. 모르면 사용자에게 묻는다.

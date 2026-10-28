@@ -1,0 +1,4 @@
+# figstyle — `python check_setup.py --install` 이 이 목록을 설치한다
+matplotlib>=3.7
+numpy>=1.24
+# 시험한 판: Python 3.13, matplotlib 3.11, numpy 2.2
